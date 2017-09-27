@@ -8,13 +8,13 @@ Page({
    */
   data: {
       movies: [{
-          url: 'http://kaibei.shenmikj.com/H5/image/banner.jpg'
+          url: '../../image/banner.jpg'
       },
       {
-          url: 'http://kaibei.shenmikj.com/H5/image/banner1.jpg'
+          url: '../../image/banner1.jpg'
       },
       {
-          url: 'http://kaibei.shenmikj.com/H5/image/banner.jpg'
+          url: '../../image/banner.jpg'
       }
       ],
   },
