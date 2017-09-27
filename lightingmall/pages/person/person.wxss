@@ -1,0 +1,66 @@
+.img_box{
+    width: 100%;   
+    height: 100%;
+}
+.clear{
+    clear: both;
+}
+.person_container{
+
+}
+.perleft{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.per_top{
+    display: flex;
+    justify-content: space-between;
+     background: #000;
+     height: 160rpx;
+     line-height: 160rpx;
+}
+.person_img{
+    padding-left: 50rpx;
+    padding-right: 40rpx;
+    width: 100rpx;
+    height: 100rpx;
+}
+.pername{
+    color: #fff;
+    display: inline-block;
+    font-size: 40rpx; 
+}
+.qianjin{
+    margin-top: 16rpx; 
+    margin-right: 26rpx;
+    width: 50rpx;
+    height: 50rpx;
+}
+/* item */
+.per_item{
+    display: flex;
+    justify-content: space-between;
+     background: #fff;
+     height: 88rpx;
+     line-height: 88rpx;
+     border-bottom: 1rpx solid #e5e5e5;
+}
+.pername_item{
+    color: #333;
+    display: inline-block;
+    font-size: 30rpx;
+}
+.item_img{
+    width: 50rpx;
+    height: 50rpx;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    padding-bottom: 10rpx;
+}
+.qian_item{
+     margin-top: 14rpx;  
+     margin-right: 20rpx; 
+    width: 32rpx;
+    height: 32rpx;
+}

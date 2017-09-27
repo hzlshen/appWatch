@@ -1,0 +1,8 @@
+<!--home_page.wxml-->
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" indicator-active-color="#333" indicator-color="#999">
+    <block wx:for="{{movies}}" wx:for-index="index">
+        <swiper-item>
+            <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+        </swiper-item>
+    </block>
+</swiper>

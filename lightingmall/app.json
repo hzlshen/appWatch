@@ -1,0 +1,47 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/person/person",
+        "pages/classification/classification",
+        "pages/shoppingcart/shoppingcart",
+        "pages/index/index",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#111",
+        "navigationBarTitleText": "",
+        "navigationBarTextStyle": "#fff"
+    },
+    "tabBar": {
+        "color": "#999",
+        "selectedColor": "#111",
+        "borderStyle": "white",
+        "list": [
+            {
+                "selectedIconPath": "image/tab/homeac.png",
+                "iconPath": "image/tab/home.png",
+                "pagePath": "pages/home/home",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "image/tab/luxian.png",
+                "iconPath": "image/tab/luxian1.png",
+                "pagePath": "pages/classification/classification",
+                "text": "分类"
+            },
+            {
+                "selectedIconPath": "image/tab/lactive.png",
+                "iconPath": "image/tab/lactive1.png",
+                "pagePath": "pages/shoppingcart/shoppingcart",
+                "text": "购物车"
+            },
+            {
+                "selectedIconPath": "image/tab/lactive.png",
+                "iconPath": "image/tab/lactive1.png",
+                "pagePath": "pages/person/person",
+                "text": "个人中心"
+            }
+        ]
+    }
+}

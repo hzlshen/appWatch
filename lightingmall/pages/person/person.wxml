@@ -1,0 +1,82 @@
+
+<view class='person_container'>
+    <view class='per_top'>
+        <view class='perleft'>
+            <view class='person_img' wx:for="{{person}}" wx:for-item="per">
+                <image src='{{per.image}}' class='img_box'></image>
+            </view>
+            <view class='pername'>
+                <text>不动的推动者</text>
+            </view>
+        </view>
+        <view class='qianjin'>
+            <image src='../../image/tab/qinajin.png' class='img_box'></image>
+        </view>
+    </view>
+    <view class='per_item'>
+        <view class='perleft'>
+            <view class='item_img' wx:for="{{oder}}" wx:for-item="my">
+                <image src='{{my.image}}' class='img_box'></image>
+            </view>
+            <view class='pername_item'>
+                <text>我的订单</text>
+            </view>
+        </view>
+        <view class='qian_item' wx:for="{{pericon}}" wx:for-item="pe">
+             <image src='{{pe.image}}' class='img_box'></image>
+        </view>
+    </view>
+    <view class='per_item'>
+        <view class='perleft'>
+            <view class='item_img' wx:for="{{styem}}" wx:for-item="my">
+                <image src='{{my.image}}' class='img_box'></image>
+            </view>
+            <view class='pername_item'>
+                <text>系统通知</text>
+            </view>
+        </view>
+        <view class='qian_item' wx:for="{{pericon}}" wx:for-item="pe">
+             <image src='{{pe.image}}' class='img_box'></image>
+        </view>
+    </view>
+    <view class='per_item'>
+        <view class='perleft'>
+            <view class='item_img' wx:for="{{mencar}}" wx:for-item="my">
+                <image src='{{my.image}}' class='img_box'></image>
+            </view>
+            <view class='pername_item'>
+                <text>会员卡</text>
+            </view>
+        </view>
+        <view class='qian_item' wx:for="{{pericon}}" wx:for-item="pe">
+             <image src='{{pe.image}}' class='img_box'></image>
+        </view>
+    </view>
+    <view class='per_item'>
+        <view class='perleft'>
+            <view class='item_img' wx:for="{{coupon}}" wx:for-item="my">
+                <image src='{{my.image}}' class='img_box'></image>
+            </view>
+            <view class='pername_item'>
+                <text>优惠券</text>
+            </view>
+        </view>
+        <view class='qian_item' wx:for="{{pericon}}" wx:for-item="pe">
+             <image src='{{pe.image}}' class='img_box'></image>
+        </view>
+    </view>
+    <view class='per_item'>
+        <view class='perleft'>
+            <view class='item_img' wx:for="{{intergal}}" wx:for-item="my">
+                <image src='{{my.image}}' class='img_box'></image>
+            </view>
+            <view class='pername_item'>
+                <text>积分</text>
+            </view>
+        </view>
+        <view class='qian_item' wx:for="{{pericon}}" wx:for-item="pe">
+             <image src='{{pe.image}}' class='img_box'></image>
+        </view>
+    </view>
+
+</view>

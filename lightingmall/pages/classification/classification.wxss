@@ -1,0 +1,135 @@
+.img_box{
+    width: 100%;
+    height: 100%;
+}
+.router_top{
+    display: flex;
+    justify-content: space-around; 
+    height: 130rpx;
+    width: 100%;
+    padding-top: 30rpx;
+    border-bottom: 10rpx solid #e5e5e5;
+    /* align-items: center; */
+}
+.top_item{
+   text-align: center;
+   align-items: center;
+   z-index: 2;
+}
+.top_img{
+   margin: 0 auto;
+   padding-bottom: 20rpx; 
+    width: 50rpx;
+    height: 50rpx;
+}
+.rou_text{
+    font-size: 30rpx;
+    color: #111;
+}
+.router_bann{
+    width: auto;
+    margin: 30rpx 30rpx 40rpx 30rpx;
+    position: relative;
+}
+.bann_img{
+    width: 100%;
+    height: 280rpx;
+}
+.bac_p{
+    position: absolute;
+    top: 0;
+    opacity: .6;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.bac_p text{
+    color: #fff;
+}
+
+/* list */
+.footer_home{
+    /* padding: 10rpx 30rpx; */
+    padding-bottom: 0;
+}
+.bo_show{
+    /* width: 100%; */
+    height: 260rpx;
+    padding: 10rpx 30rpx;
+}
+.footer_text{
+    width: 100%;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    color: #000;
+    padding-left: 30rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    margin-bottom: 20rpx;
+}
+.footer_con{
+    position: relative;
+}
+.img_text {
+  display: inline-block;
+  padding: 20rpx 50rpx;
+  border: 1px solid #efefef;
+  color: #fff;
+  transform: skew(-20deg);
+  position: absolute;
+  top: 26%;
+  left:32%;
+  font-size: 38rpx;
+}
+
+/* .swiper-tab{
+    width: 100%;
+    border-bottom: 2rpx solid #ccc;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    font-weight: bold;
+}
+.swiper-tab-item{
+    display: inline-block;
+    width: 33.33%;
+    color:red;
+}
+.active{
+    color:aqua;
+    border-bottom: 4rpx solid red;
+}
+
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+  background-color:white;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 50%;
+  color: #777;
+  border-bottom: 0rpx;
+}
+
+.on {
+  color: #da7c0c;
+  border-bottom: 2rpx solid #da7c0c;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-box view {
+  text-align: center;
+} */
