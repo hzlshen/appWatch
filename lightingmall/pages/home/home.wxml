@@ -6,3 +6,54 @@
         </swiper-item>
     </block>
 </swiper>
+
+<view class='get_content'>
+    <view class='box_list'>
+        <view class='content_img'>
+            <image src='../../image/banner.jpg' class='img_box'></image>
+        </view>
+        <view class='box_text'>店铺街</view>
+    </view>
+    <view class='box_list'>
+        <view class='content_img'>
+            <image src='../../image/banner.jpg' class='img_box'></image>
+        </view>
+        <view class='box_text'>店铺街</view>
+    </view>
+    <view class='box_list'>
+        <view class='content_img'>
+            <image src='../../image/banner.jpg' class='img_box'></image>
+        </view>
+        <view class='box_text'>店铺街</view>
+    </view>
+    <view class='box_list'>
+        <view class='content_img'>
+            <image src='../../image/banner.jpg' class='img_box'></image>
+        </view>
+        <view class='box_text'>店铺街</view>
+    </view>
+    <view class='box_list'>
+        <view class='content_img'>
+            <image src='../../image/banner.jpg' class='img_box'></image>
+        </view>
+        <view class='box_text'>店铺街</view>
+    </view>
+    <view class='box_list'>
+        <view class='content_img'>
+            <image src='../../image/banner.jpg' class='img_box'></image>
+        </view>
+        <view class='box_text'>店铺街</view>
+    </view>
+    <view class='box_list'>
+        <view class='content_img'>
+            <image src='../../image/banner.jpg' class='img_box'></image>
+        </view>
+        <view class='box_text'>店铺街</view>
+    </view>
+    <view class='box_list'>
+        <view class='content_img'>
+            <image src='../../image/banner.jpg' class='img_box'></image>
+        </view>
+        <view class='box_text'>店铺街</view>
+    </view>
+</view>
