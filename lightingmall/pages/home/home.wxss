@@ -50,7 +50,8 @@
     height: 400rpx;
 }
 .box_list{
-    height: 80rpx;
+    width: 20%;
+    height: auto;
     margin-left: 30rpx;
 }
 .content_img{
