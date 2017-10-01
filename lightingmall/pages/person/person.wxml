@@ -1,16 +1,11 @@
 
 <view class='person_container'>
-    <view class='per_top'>
-        <view class='perleft'>
-            <view class='person_img' wx:for="{{person}}" wx:for-item="per">
-                <image src='{{per.image}}' class='img_box'></image>
-            </view>
-            <view class='pername'>
-                <text>不动的推动者</text>
-            </view>
+    <view class='avater_top'>
+        <view class='avater_img'>
+            <image src='../../image/th.jpg' class='img_box'></image>
         </view>
-        <view class='qianjin'>
-            <image src='../../image/tab/qinajin.png' class='img_box'></image>
+        <view class='ava_text'>
+        不动的推动者
         </view>
     </view>
     <view class='per_item'>

@@ -5,8 +5,30 @@
 .clear{
     clear: both;
 }
-.person_container{
-
+.avater_top{
+    width: 100%;
+    height: 360rpx;
+    background: #FE3265;
+}
+.avater_img{
+    width: 200rpx;
+    height: 200rpx;
+    margin: 0 auto;
+    padding-top: 50rpx;
+}
+.avater_img image{
+    border-radius: 50%;
+}
+.ava_text{
+    margin-top: 20rpx;
+    font-size: 38rpx;
+    color: #fff;
+    text-align: center;
+}
+.pername{
+    color: #fff;
+    display: inline-block;
+    font-size: 40rpx; 
 }
 .perleft{
     display: flex;
