@@ -13,19 +13,22 @@ Page({
          
       }],
       oder:[{
-          
+          image:'../../image/tab/mydetail.png'
       }],
       styem: [{
-          
+          image: '../../image/tab/wallet.png'
       }],
       mencar: [{
-          
+          image: '../../image/tab/integral.png'
       }],
       coupon: [{
-          
+          image: '../../image/tab/coupon.png'
       }],
       intergal: [{
-          
+          image: '../../image/tab/Evaluation.png'
+      }],
+      Collection:[{
+          image: '../../image/tab/Collection.png'
       }],
   },
 

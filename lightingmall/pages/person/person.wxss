@@ -25,6 +25,30 @@
     color: #fff;
     text-align: center;
 }
+.person_title{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200rpx;
+    border-top: 30rpx solid #e5e5e5;
+    border-bottom: 30rpx solid #e5e5e5;
+    padding: 0 20rpx;
+}
+.person_list{
+    /* width: 20%; */
+}
+.title_img{
+    width: 90rpx;
+    height: 90rpx;
+    margin-bottom: 10rpx;
+}
+.txt_per{
+    margin-top: 10rpx;
+    color: #000;
+    font-size: 28rpx;
+}
+
 .pername{
     color: #fff;
     display: inline-block;
@@ -53,12 +77,7 @@
     display: inline-block;
     font-size: 40rpx; 
 }
-.qianjin{
-    margin-top: 16rpx; 
-    margin-right: 26rpx;
-    width: 50rpx;
-    height: 50rpx;
-}
+
 /* item */
 .per_item{
     display: flex;
