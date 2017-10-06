@@ -57,3 +57,7 @@
         <view class='box_text'>店铺街</view>
     </view>
 </view>
+
+<view class=''>
+    <image src='../../banner.jpg' class='img_box'></image>
+</view>
