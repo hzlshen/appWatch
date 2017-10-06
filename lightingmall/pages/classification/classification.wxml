@@ -1,84 +1,9 @@
-<!-- top -->
-<!-- <view class='router_top'>
-    <view class='top_item {{menuTapCurrent=="0"?"borders":""}}' data-current="0" catchtap="menuTap">
-        <view class='top_img' wx:for="{{start}}" wx:for-item="sta">
-            <image src='{{sta.image}}' class='img_box'></image>
-        </view>
-        <view class='rou_text'>
-            <text>单身狗路线</text>
-        </view>
-    </view>
-    <view class='top_item {{menuTapCurrent=="1"?"borders":""}}' data-current="1" catchtap="menuTap">
-        <view class='top_img' wx:for="{{chou}}" wx:for-item="sta">
-            <image src='{{sta.image}}' class='img_box'></image>
-        </view>
-        <view class='rou_text'>
-            <text>合家欢路线</text>
-        </view>
-    </view>
-    <view class='top_item {{menuTapCurrent=="2"?"borders":""}}' data-current="2" catchtap="menuTap">
-        <view class='top_img' wx:for="{{xin}}" wx:for-item="sta">
-            <image src='{{sta.image}}' class='img_box'></image>
-        </view>
-        <view class='rou_text'>
-            <text>情侣路线</text>
-        </view>
-    </view>
-    <view class='top_item {{menuTapCurrent=="3"?"borders":""}}' data-current="3" catchtap="menuTap">
-        <view class='top_img' wx:for="{{tong}}" wx:for-item="to">
-            <image src='{{to.image}}' class='img_box'></image>
-        </view>
-        <view class='rou_text'>
-            <text>童真路线</text>
-        </view>
-    </view>
-</view> -->
+<view class="swiper-tab">
+    <view wx:for="{{park}}" wx:for-item="q" class="swiper-tab-list {{currentTab==q.num ? 'on' : ''}}" data-current="{{q.num}}" bindtap="swichNav">{{q.type}}</view>
+</view>
 
-<!-- <view hidden="{{menuTapCurrent!='0'}}">
-    <view class='router_bann'>
-        <view class='bann_img' wx:for="{{rouimg}}" wx:for-item="rou">
-            <image src='{{rou.image}}' class='img_box'></image>
-        </view>
-        <view class='bac_p'>
-            <text>Hellow111111</text>
-        </view>
+<view class="weui-cells__title" hidden="{{!isShow}}" wx:for="{{park}}" wx:for-item="sta" style="display:{{currentTab==sta.num?'block':'none'}};">
+    <view class='park_img'>
+        <image src='{{sta.image_url}}' mode='aspectFill' class='img_box'></image>
     </view>
-
-    <view class='footer_home'>
-        <scroll-view scroll-y style='height:700rpx;'>
-            <view class='footer_con clear' bindtap='router'>
-                <view class='bo_show' wx:for="{{boShow}}" wx:for-item="bow">
-                    <image src='{{bow.image}}' class='img_box'></image>
-                </view>
-                <view class='img_text'>
-                    <text>异度空间</text>
-                </view>
-                <view class='footer_text'>
-                    <text>异度空间~</text>
-                </view>
-            </view>
-            <view class='footer_con clear' bindtap='router'>
-                <view class='bo_show' wx:for="{{boShow}}" wx:for-item="bow">
-                    <image src='{{bow.image}}' class='img_box'></image>
-                </view>
-                <view class='img_text'>
-                    <text>雪山飞龙</text>
-                </view>
-                <view class='footer_text'>
-                    <text>雪山飞龙~</text>
-                </view>
-            </view>
-            <view class='footer_con clear' bindtap='router'>
-                <view class='bo_show' wx:for="{{boShow}}" wx:for-item="bow">
-                    <image src='{{bow.image}}' class='img_box'></image>
-                </view>
-                <view class='img_text'>
-                    <text>金矿漂流</text>
-                </view>
-                <view class='footer_text'>
-                    <text>金矿漂流~</text>
-                </view>
-            </view>
-        </scroll-view>
-    </view>
-</view> -->
+</view>

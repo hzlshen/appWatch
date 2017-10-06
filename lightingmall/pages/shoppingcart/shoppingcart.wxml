@@ -1,0 +1,11 @@
+<view class="shop_top">
+    <view class='shop_img'>
+        <image src='../../image/wu.png' class='img_box'></image>
+    </view>
+    <view class='shop_kon'>
+        购物车还是空的
+    </view>
+    <view class='shop_btn'>
+        马上逛逛
+    </view>
+</view>

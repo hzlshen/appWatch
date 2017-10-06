@@ -1,102 +1,108 @@
 var app = getApp()
 Page({
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-      start:[{
-          image:'http://kaibei.shenmikj.com/H5/image/tab/start.png'
-      }],
-      chou: [{
-          image: 'http://kaibei.shenmikj.com/H5/image/tab/chou.png'
-      }],
-      xin: [{
-          image: 'http://kaibei.shenmikj.com/H5/image/tab/xin.png'
-      }],
-      tong:[{
-          image:'http://kaibei.shenmikj.com/H5/image/tab/tong.png'
-      }],
-      rouimg:[{
-          image: 'http://kaibei.shenmikj.com/H5/image/banner.jpg'
-      }],
-      boShow: [{
-          image: 'http://kaibei.shenmikj.com/H5/image/magical.jpg'
-      }
-      ],
-      menuTapCurrent: true,
-      menuTapCurrent: 0,
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-      
-  },
-
-    // 跳转
-  router:function(){
-    wx.navigateTo({
-      url: '../routerdetail/routerdetail',
-    })
-  },
-
-
-    menuTap: function (e) {
-        var current = e.currentTarget.dataset.current;//获取到绑定的数据
-        //改变menuTapCurrent的值为当前选中的menu所绑定的数据
-        this.setData({
-            menuTapCurrent: current
-        });
+    /**
+     * 页面的初始数据
+     */
+    data: {
+        park: [],
+        rigpark: [],
+        parkban: [], 
+        server: [], 
+        isShow: true,
+        currentTab: 0,
     },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
-  },
+    /**
+     * 生命周期函数--监听页面加载
+     */
+    onLoad: function (options) {
+        
+        var that = this;
+        wx.request({
+            url: 'https://jisu.shenmikj.com/tour/mbone/index.php/api/index/guide',
+            success:function(res){
+                that.setData({
+                    park: res.data.data,
+                })
+                var param = {};
+                for (var i = 0; i < res.data.data.length; i++) {
+                    var string1 = "park[" + i + "].num";
+                    param[string1] = i;
+                }
+                that.setData(param)
+                that.setData({
+                    currentTab: that.data.park[0].num
+                })
+            }
+        })
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
-  },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
+    },
+    // 滑动切换tab 
+    // bindChange: function (e) {
+    //     var that = this;
+    //     that.setData({ currentTab: e.detail.current });
+    // },
+    // 点击tab切换 
+    swichNav: function (e) {
+        if (this.data.currentTab === e.target.dataset.current) {
+            return false;
+        } else {
+            var showMode = e.target.dataset.current == 0;
+            this.setData({
+                currentTab: e.target.dataset.current,
+                isShow: showMode
+            })
+        }
+    },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
-  },
+    /**
+     * 生命周期函数--监听页面初次渲染完成
+     */
+    onReady: function () {
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
+    },
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
+    /**
+     * 生命周期函数--监听页面显示
+     */
+    onShow: function () {
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
-  }
+    },
+
+    /**
+     * 生命周期函数--监听页面隐藏
+     */
+    onHide: function () {
+
+    },
+
+    /**
+     * 生命周期函数--监听页面卸载
+     */
+    onUnload: function () {
+
+    },
+
+    /**
+     * 页面相关事件处理函数--监听用户下拉动作
+     */
+    onPullDownRefresh: function () {
+
+    },
+
+    /**
+     * 页面上拉触底事件的处理函数
+     */
+    onReachBottom: function () {
+
+    },
+
+    /**
+     * 用户点击右上角分享
+     */
+    onShareAppMessage: function () {
+
+    }
 })
