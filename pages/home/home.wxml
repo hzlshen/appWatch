@@ -56,4 +56,7 @@
         </view>
         <view class='box_text'>店铺街</view>
     </view>
+    <view>
+    <text>Hello world</text>
+    </view>
 </view>
