@@ -1,5 +1,5 @@
 <!--home_page.wxml-->
-<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" indicator-active-color="#333" indicator-color="#999">
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" indicator-active-color="#111" indicator-color="#f4f4f4">
     <block wx:for="{{movies}}" wx:for-index="index">
         <swiper-item>
             <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
@@ -8,53 +8,53 @@
 </swiper>
 
 <view class='get_content'>
-    <view class='box_list'>
+    <view class='box_list' bindtap='go_router'>
         <view class='content_img'>
             <image src='../../image/banner.jpg' class='img_box'></image>
         </view>
-        <view class='box_text'>店铺街</view>
+        <view class='box_text'>灯饰</view>
     </view>
     <view class='box_list'>
         <view class='content_img'>
             <image src='../../image/banner.jpg' class='img_box'></image>
         </view>
-        <view class='box_text'>店铺街</view>
+        <view class='box_text'>吊灯</view>
     </view>
     <view class='box_list'>
         <view class='content_img'>
             <image src='../../image/banner.jpg' class='img_box'></image>
         </view>
-        <view class='box_text'>店铺街</view>
+        <view class='box_text'>复古灯</view>
     </view>
     <view class='box_list'>
         <view class='content_img'>
             <image src='../../image/banner.jpg' class='img_box'></image>
         </view>
-        <view class='box_text'>店铺街</view>
+        <view class='box_text'>天顶灯</view>
     </view>
     <view class='box_list'>
         <view class='content_img'>
             <image src='../../image/banner.jpg' class='img_box'></image>
         </view>
-        <view class='box_text'>店铺街</view>
+        <view class='box_text'>大灯</view>
     </view>
     <view class='box_list'>
         <view class='content_img'>
             <image src='../../image/banner.jpg' class='img_box'></image>
         </view>
-        <view class='box_text'>店铺街</view>
+        <view class='box_text'>小灯</view>
     </view>
     <view class='box_list'>
         <view class='content_img'>
             <image src='../../image/banner.jpg' class='img_box'></image>
         </view>
-        <view class='box_text'>店铺街</view>
+        <view class='box_text'>霓虹灯</view>
     </view>
     <view class='box_list'>
         <view class='content_img'>
             <image src='../../image/banner.jpg' class='img_box'></image>
         </view>
-        <view class='box_text'>店铺街</view>
+        <view class='box_text'>灯条</view>
     </view>
     <view>
     <text>Hello world</text>

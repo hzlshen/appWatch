@@ -1,5 +1,4 @@
-//home_page.js
-//获取应用实例
+
 var app = getApp()
 Page({
 
@@ -7,27 +6,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-      movies: [{
-          url: '../../image/banner.jpg'
-      },
-      {
-          url: '../../image/banner1.jpg'
-      },
-      {
-          url: '../../image/banner.jpg'
-      }
-      ],
+      
   },
-  go_router: function () {
-      wx.navigateTo({
-        url: '../prodDetails/prodDetails',
-      })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-   
+    
   },
 
   /**

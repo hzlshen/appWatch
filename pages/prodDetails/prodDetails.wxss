@@ -1,0 +1,6 @@
+.top_details{
+  color: blue;
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 40rpx;
+}
