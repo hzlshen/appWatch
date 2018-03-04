@@ -1,3 +1,10 @@
-<view class="top_details">
-  <text>这是个详情页面</text>
+<view >
+  <view >
+    <image src="../../image/th.png"></image> 
+  </view>
+  <view>
+    <view>
+      title
+    </view>
+  </view>
 </view>
