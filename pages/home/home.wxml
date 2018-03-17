@@ -27,6 +27,9 @@
         <view class='box_text'>复古灯</view>
     </view>
     <view class='box_list'>
+      <view>
+        你好
+      </view>
         <view class='content_img'>
             <image src='../../image/banner.jpg' class='img_box'></image>
         </view>
