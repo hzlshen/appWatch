@@ -7,75 +7,78 @@ Page({
    * 页面的初始数据
    */
   data: {
-      movies: [{
-          url: '../../image/banner.jpg'
+    movies: [
+      {
+        url: '../../image/banner.jpg'
       },
       {
-          url: '../../image/banner1.jpg'
+        url: '../../image/banner1.jpg'
       },
       {
-          url: '../../image/banner.jpg'
+        url: '../../image/banner.jpg'
       }
-      ],
+    ],
   },
   go_router: function () {
-      wx.navigateTo({
-        url: '../prodDetails/prodDetails',
-      })
+    wx.navigateTo({
+      url: '../prodDetails/prodDetails',
+    })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
    
+
+    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    
+
   }
 })
